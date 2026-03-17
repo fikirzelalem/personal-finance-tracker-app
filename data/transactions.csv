@@ -1,4 +1,5 @@
 id,date,amount,type,category,description
+14,2026-03-01,12.00,income,Other,Opening balance
 15,2026-03-16,720.00,income,Other,Paycheck (72 x $10)
 16,2026-03-02,10.59,expense,Food,DoorDash
 17,2026-03-02,3.99,expense,Food,Food & drinks
