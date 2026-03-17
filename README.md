@@ -8,12 +8,12 @@ A multi-page personal finance dashboard built with Python, Streamlit, and Plotly
 
 ## Features
 
-- **Overview Dashboard** — KPI cards for total income, expenses, net savings, and savings rate with interactive monthly charts
-- **Transaction Management** — Add transactions, import from CSV with automatic deduplication, filter and export data
+- **Overview Dashboard** — KPI cards for total income, expenses, net savings, and savings rate with month-over-month comparison
+- **Transaction Management** — Add, delete, and import transactions with automatic deduplication and CSV export
 - **Interactive Charts** — Spending trend line, category donut pie, stacked monthly bar chart, and a daily spending heatmap
 - **Budget Tracking** — Set monthly limits per category with color-coded progress bars (on track / warning / over budget)
 - **Custom Categories** — Add and manage your own spending categories
-- **CSV Export** — Download any filtered view of your transactions
+- **Dark Theme** — Custom SF Pro font, gradient backgrounds, glowing metric cards
 
 ---
 
@@ -33,21 +33,25 @@ A multi-page personal finance dashboard built with Python, Streamlit, and Plotly
 
 ```
 personal-finance-tracker/
-├── app.py                  # Entry point — page config and navigation
-├── tracker.py              # Core logic — load, add, save, deduplicate transactions
-├── budget.py               # Budget logic — set limits, compare actuals
-├── visualizations.py       # Original matplotlib charts (CLI version)
-├── main.py                 # Original CLI menu (terminal version)
+├── app.py                       # Entry point — page config, navigation, global CSS
+├── tracker.py                   # Core logic — load, add, save, delete, deduplicate
+├── budget.py                    # Budget logic — set limits, compare actuals
+├── visualizations.py            # Matplotlib charts (original CLI version)
+├── main.py                      # CLI menu (original terminal version)
 ├── requirements.txt
+├── .streamlit/
+│   └── config.toml              # Dark theme config
 ├── data/
-│   ├── transactions.csv    # Transaction records
-│   ├── budgets.csv         # Monthly budget limits
-│   └── categories.csv      # User-defined categories
-└── pages/
-    ├── overview.py         # KPI dashboard
-    ├── transactions.py     # Transaction table, add form, CSV import
-    ├── charts.py           # Interactive visualizations
-    └── budget.py           # Budget status and management
+│   ├── transactions.csv         # Transaction records
+│   ├── budgets.csv              # Monthly budget limits
+│   ├── categories.csv           # User-defined categories
+│   └── sample_transactions.csv  # Sample data for reference
+├── pages/
+│   ├── overview.py              # KPI dashboard + month-over-month comparison
+│   ├── transactions.py          # Table, add form, CSV import, delete
+│   ├── charts.py                # Trend line, pie, stacked bar, heatmap
+│   └── budget.py                # Color-coded progress bars + summary table
+└── demo/                        # App screenshots
 ```
 
 ---
