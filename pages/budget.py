@@ -74,7 +74,7 @@ else:
             xaxis=dict(range=[0, max(limit * 1.1, spent * 1.1)], showticklabels=False, showgrid=False, zeroline=False),
             yaxis=dict(showticklabels=False, showgrid=False),
         )
-        st.plotly_chart(fig, use_container_width=True, config={"staticPlot": True})
+        st.plotly_chart(fig, use_container_width=True, config={"staticPlot": True}, key=f"budget_bar_{cat}")
 
     # ── Summary table ─────────────────────────────────────────────────────────
     st.markdown("---")
