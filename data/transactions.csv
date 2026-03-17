@@ -1,23 +1,29 @@
 id,date,amount,type,category,description
-1,2026-01-05,3200.00,income,Other,Monthly salary
-2,2026-01-08,85.50,expense,Food,Grocery run
-3,2026-01-10,45.00,expense,Transport,Gas
-4,2026-01-12,12.99,expense,Subscriptions,Netflix
-5,2026-01-15,60.00,expense,Health,Gym membership
-6,2026-01-18,200.00,expense,Clothing,Winter jacket
-7,2026-01-22,30.00,expense,Food,Dinner out
-8,2026-01-28,110.00,expense,Utilities,Electric bill
-9,2026-02-05,3200.00,income,Other,Monthly salary
-10,2026-02-07,90.00,expense,Food,Grocery run
-11,2026-02-09,45.00,expense,Transport,Gas
-12,2026-02-11,12.99,expense,Subscriptions,Netflix
-13,2026-02-14,75.00,expense,Entertainment,Valentine dinner
-14,2026-02-19,60.00,expense,Health,Gym membership
-15,2026-02-24,105.00,expense,Utilities,Electric bill
-16,2026-03-01,3200.00,income,Other,Monthly salary
-17,2026-03-03,95.00,expense,Food,Grocery run
-18,2026-03-05,45.00,expense,Transport,Gas
-19,2026-03-07,12.99,expense,Subscriptions,Netflix
-20,2026-03-10,60.00,expense,Health,Gym membership
-21,2026-03-12,49.99,expense,Subscriptions,Adobe Creative Cloud
-22,2026-03-14,180.00,expense,Utilities,Electric bill
+16,2026-03-02,10.59,expense,Food,DoorDash
+17,2026-03-02,3.99,expense,Food,Food & drinks
+18,2026-03-03,4.95,expense,Snacks,Vending machine
+19,2026-03-03,2.60,expense,Snacks,Vending machine
+20,2026-03-05,3.10,expense,Food,Food & drinks
+21,2026-03-05,2.75,expense,Snacks,Vending machine
+22,2026-03-05,2.60,expense,Snacks,Vending machine
+23,2026-03-06,5.20,expense,Food,Food & drinks
+24,2026-03-09,25.00,expense,Subscriptions,Visible phone bill
+25,2026-03-09,9.94,expense,Shopping,Burlington
+26,2026-03-10,2.10,expense,Food,Food & drinks
+27,2026-03-11,7.97,expense,Coffee,Coffee
+28,2026-03-11,4.29,expense,Food,Food & drinks
+29,2026-03-11,2.35,expense,Food,Food & drinks
+30,2026-03-11,2.75,expense,Snacks,Vending machine
+31,2026-03-12,2.75,expense,Snacks,Vending machine
+32,2026-03-12,11.27,expense,Shopping,Burlington
+33,2026-03-12,11.64,expense,Food,DoorDash
+34,2026-03-13,2.60,expense,Snacks,Vending machine
+35,2026-03-13,6.82,expense,Coffee,Coffee
+36,2026-03-13,6.65,expense,Food,Food & drinks
+37,2026-03-13,1.91,expense,Food,Food & drinks
+38,2026-03-13,11.85,expense,Food,Chipotle
+39,2026-03-13,2.75,expense,Snacks,Vending machine
+40,2026-03-14,1.00,expense,Food,Food & drinks
+41,2026-03-14,2.75,expense,Snacks,Vending machine
+42,2026-03-16,10.00,expense,Transport,Amtrak train
+43,2026-03-16,4.95,expense,Snacks,Vending machine
