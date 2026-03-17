@@ -5,6 +5,7 @@ backgroundColor = "#0E1117"
 secondaryBackgroundColor = "#1A1D23"
 textColor = "#FAFAFA"
 font = "sans serif"
+# Font is overridden via custom CSS to use Apple SF Pro system font
 
 [server]
 headless = true

@@ -24,6 +24,13 @@ pg = st.navigation([overview, transactions, charts, budget])
 
 st.markdown("""
 <style>
+/* ── Global font ── */
+html, body, [class*="css"], .stApp, .stMarkdown, .stText, button, input, select, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 /* ── Main background ── */
 .stApp {
     background: linear-gradient(135deg, #0a0e1a 0%, #0d1117 50%, #0a1628 100%);
@@ -145,7 +152,7 @@ hr {
 </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("## 💰 Finance Tracker")
+st.sidebar.markdown("## 💰 Personal Finance Tracker")
 st.sidebar.markdown("---")
 
 pg.run()
