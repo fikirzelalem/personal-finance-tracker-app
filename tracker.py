@@ -1,6 +1,6 @@
 # =============================================================================
-# File: tracker.py
-# Author: Fikir Zelalem
+# tracker.py
+# Author: Fikir Demeke
 # Description: Core data logic for the Personal Finance Tracker.
 #              Handles loading, saving, adding, and importing transactions,
 #              as well as category management and summary aggregations.
@@ -74,6 +74,15 @@ def get_monthly_summary(df: pd.DataFrame) -> pd.DataFrame:
 def get_category_totals(df: pd.DataFrame, tx_type: str = "expense") -> pd.Series:
     filtered = df[df["type"] == tx_type]
     return filtered.groupby("category")["amount"].sum().sort_values(ascending=False)
+
+
+def delete_transaction(tx_id: int) -> bool:
+    df = load_transactions()
+    if tx_id not in df["id"].values:
+        return False
+    df = df[df["id"] != tx_id]
+    save_transactions(df)
+    return True
 
 
 def load_categories() -> list:

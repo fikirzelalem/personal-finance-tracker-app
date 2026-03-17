@@ -11,7 +11,7 @@ import streamlit as st
 import pandas as pd
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from tracker import load_transactions, add_transaction, import_from_csv, load_categories, add_category
+from tracker import load_transactions, add_transaction, import_from_csv, load_categories, add_category, delete_transaction
 
 st.title("💳 Transactions")
 
@@ -108,6 +108,37 @@ if uploaded:
     st.success(f"Imported {added} new transaction(s).")
     st.cache_data.clear()
     st.rerun()
+
+st.markdown("---")
+
+# ── Delete a transaction ──────────────────────────────────────────────────────
+st.markdown("### Delete a Transaction")
+
+all_tx = load_transactions()
+if not all_tx.empty:
+    all_tx["label"] = all_tx.apply(
+        lambda r: f"#{int(r['id'])} — {r['date'].strftime('%Y-%m-%d')} | {r['type']} | ${r['amount']:.2f} | {r['category']} | {r['description']}",
+        axis=1,
+    )
+    selected_label = st.selectbox("Select transaction to delete", all_tx["label"])
+    selected_id = int(all_tx.loc[all_tx["label"] == selected_label, "id"].values[0])
+
+    if st.button("🗑 Delete Transaction", type="primary"):
+        if "confirm_delete" not in st.session_state:
+            st.session_state.confirm_delete = selected_id
+
+if "confirm_delete" in st.session_state:
+    st.warning(f"Are you sure you want to delete transaction #{st.session_state.confirm_delete}? This cannot be undone.")
+    col1, col2 = st.columns(2)
+    if col1.button("Yes, delete it"):
+        delete_transaction(st.session_state.confirm_delete)
+        del st.session_state.confirm_delete
+        st.cache_data.clear()
+        st.success("Transaction deleted.")
+        st.rerun()
+    if col2.button("Cancel"):
+        del st.session_state.confirm_delete
+        st.rerun()
 
 st.markdown("---")
 
