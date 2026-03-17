@@ -76,7 +76,7 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## Screenshots
 
-> Coming soon — add screenshots of the Overview, Charts, and Budget pages here.
+> will add screenshots of the Overview, Charts, and Budget pages here.
 
 ---
 
