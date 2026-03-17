@@ -76,7 +76,12 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## Screenshots
 
-> will add screenshots of the Overview, Charts, and Budget pages here.
+![Overview](demo/pft%201.png)
+![Overview Charts](demo/pft%202.png)
+![Transactions](demo/pft%203.png)
+![Charts](demo/pft%204.png)
+![Charts 2](demo/pft%205.png)
+![Budget](demo/pft%206.png)
 
 ---
 
