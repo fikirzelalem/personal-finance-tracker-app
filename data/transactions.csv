@@ -1,5 +1,31 @@
 id,date,amount,type,category,description
-14,2026-03-01,12.00,income,Other,Opening balance
+1,2026-02-02,17.90,expense,Food,Whole Foods
+2,2026-02-03,5.70,expense,Snacks,Vending machine
+3,2026-02-03,5.00,expense,Entertainment,Howard Chapter ColorStack
+4,2026-02-03,2.75,expense,Food,McDonald's
+5,2026-02-04,2.75,expense,Snacks,Vending machine
+6,2026-02-05,5.20,income,Other,Cash from friend
+7,2026-02-06,4.77,expense,Food,McDonald's
+8,2026-02-09,4.95,expense,Snacks,Vending machine
+9,2026-02-09,4.95,expense,Snacks,Vending machine
+10,2026-02-09,25.00,expense,Subscriptions,Visible phone bill
+11,2026-02-09,2.69,expense,Shopping,CVS
+12,2026-02-09,2.02,expense,Food,McDonald's
+13,2026-02-09,3.75,expense,Snacks,Vending machine
+14,2026-02-13,2.02,expense,Food,McDonald's
+15,2026-02-17,5.45,expense,Snacks,Vending machine
+16,2026-02-17,18.64,expense,Shopping,Walmart
+17,2026-02-23,3.10,expense,Snacks,Vending machine
+18,2026-02-23,17.60,expense,Coffee,Soricha Tea
+19,2026-02-23,2.25,expense,Transport,Metro
+20,2026-02-23,5.58,expense,Transport,Uber
+21,2026-02-26,2.85,expense,Snacks,Vending machine
+22,2026-02-27,3.99,expense,Food,Supermarket
+23,2026-02-27,2.60,expense,Snacks,Vending machine
+24,2026-02-27,2.75,expense,Snacks,Vending machine
+25,2026-02-27,2.60,expense,Snacks,Vending machine
+26,2026-02-27,2.60,expense,Snacks,Vending machine
+27,2026-03-01,12.00,income,Other,Opening balance
 15,2026-03-16,720.00,income,Other,Paycheck (72 x $10)
 16,2026-03-02,10.59,expense,Food,DoorDash
 17,2026-03-02,3.99,expense,Food,Food & drinks
