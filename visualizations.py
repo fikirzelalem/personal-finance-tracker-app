@@ -1,3 +1,11 @@
+# =============================================================================
+# File: visualizations.py
+# Author: Fikir Demeke
+# Description: Matplotlib chart functions for the CLI version of the tracker.
+#              Includes a monthly income/expense bar chart, a category pie
+#              chart, and a monthly spending trend line chart.
+# =============================================================================
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker

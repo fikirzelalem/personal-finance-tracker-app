@@ -1,3 +1,12 @@
+# =============================================================================
+# File: pages/budget.py
+# Author: Fikir Zelalem
+# Description: Budget tracking page for the Personal Finance Tracker.
+#              Shows color-coded progress bars per category (green/yellow/red),
+#              a summary table with spent, limit, remaining, and usage %,
+#              and a form to set or update monthly budget limits.
+# =============================================================================
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go

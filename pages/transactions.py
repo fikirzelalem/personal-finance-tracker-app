@@ -1,3 +1,12 @@
+# =============================================================================
+# File: pages/transactions.py
+# Author: Fikir Zelalem
+# Description: Transactions management page for the Personal Finance Tracker.
+#              Displays a filterable transaction table with CSV export,
+#              a form to add new transactions, a CSV file importer with
+#              deduplication, and a category manager.
+# =============================================================================
+
 import streamlit as st
 import pandas as pd
 import sys, os

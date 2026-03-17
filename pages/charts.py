@@ -1,3 +1,12 @@
+# =============================================================================
+# File: pages/charts.py
+# Author: Fikir Zelalem
+# Description: Interactive charts page for the Personal Finance Tracker.
+#              Includes a monthly spending trend line, a category donut pie
+#              chart, a stacked monthly bar chart by category, and a daily
+#              spending heatmap. All charts are filterable via the sidebar.
+# =============================================================================
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px

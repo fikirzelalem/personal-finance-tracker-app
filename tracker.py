@@ -1,3 +1,11 @@
+# =============================================================================
+# File: tracker.py
+# Author: Fikir Zelalem
+# Description: Core data logic for the Personal Finance Tracker.
+#              Handles loading, saving, adding, and importing transactions,
+#              as well as category management and summary aggregations.
+# =============================================================================
+
 import pandas as pd
 import os
 from datetime import datetime

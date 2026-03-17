@@ -1,3 +1,12 @@
+# =============================================================================
+# File: pages/overview.py
+# Author: Fikir Zelalem
+# Description: Overview dashboard page for the Personal Finance Tracker.
+#              Displays KPI metric cards (income, expenses, net savings,
+#              savings rate), a monthly income vs expenses bar chart, and
+#              a top spending categories horizontal bar chart.
+# =============================================================================
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px

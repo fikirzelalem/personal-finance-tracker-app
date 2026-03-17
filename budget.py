@@ -1,3 +1,11 @@
+# =============================================================================
+# File: budget.py
+# Author: Fikir Zelalem
+# Description: Budget management logic for the Personal Finance Tracker.
+#              Handles setting monthly limits per category, loading saved
+#              budgets, and comparing actual spending against those limits.
+# =============================================================================
+
 import pandas as pd
 import os
 

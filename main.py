@@ -1,3 +1,12 @@
+# =============================================================================
+# File: main.py
+# Author: Fikir Zelalem
+# Description: CLI entry point for the Personal Finance Tracker.
+#              Provides a numbered terminal menu to add transactions, import
+#              CSV files, view summaries, manage budgets, and display charts.
+#              Superseded by the Streamlit web app (app.py).
+# =============================================================================
+
 from tracker import (
     add_transaction,
     import_from_csv,

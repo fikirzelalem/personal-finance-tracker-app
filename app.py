@@ -1,3 +1,11 @@
+# =============================================================================
+# File: app.py
+# Author: Fikir Zelalem
+# Description: Streamlit entry point for the Personal Finance Tracker web app.
+#              Configures the page layout and sets up multi-page navigation
+#              across Overview, Transactions, Charts, and Budget pages.
+# =============================================================================
+
 import streamlit as st
 
 st.set_page_config(
